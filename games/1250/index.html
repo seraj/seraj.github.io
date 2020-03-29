@@ -1,13 +1,13 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 	<meta name="author" content="Seraj Vahdati">
 	<meta name="description" content="A Simple Web Game in which a player has to click 1 to 50.">
 	<meta property="og:title" content="1250 Game" />
-	<meta property="og:image"
-		content="http://seraj.me/games/1250/assets/image/screenshot.jpg" />
+	<meta property="og:image" content="http://seraj.me/games/1250/assets/image/screenshot.jpg" />
 	<meta property="og:description" content="Click 1 to 50 as fastest as you can." />
 
 	<title>1 to 50 Game</title>
@@ -22,7 +22,7 @@
 
 <body>
 	<div class="container">
-		<div class="heading">
+		<div class="header">
 			<div class="row justify-content-between">
 				<h1 class="col-4 title">1<span>2</span>50</h1>
 				<div class="col-8 scores-container">
@@ -30,10 +30,12 @@
 					<div class="best-score">0.000</div>
 				</div>
 			</div>
-			<div class="row justify-content-between">
-				<div class="col">
+			<div class="row justify-content-between align-items-center header-bottom">
+				<div class="col-7">
 					<p class="description">Click from <strong>1 to 50</strong> as fastest as you can.</p>
-					<a class="restart-button" onclick="newGame()">New Game</a>
+				</div>
+				<div class="col-5">
+					<button class="restart-button" onclick="newGame()">New Game</button>
 				</div>
 			</div>
 		</div>
